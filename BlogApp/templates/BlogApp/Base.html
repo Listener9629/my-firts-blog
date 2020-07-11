@@ -5,23 +5,23 @@
     {% load static %}
 
     <!-- Bootstrap -->
-    <link href="{% static 'WebApp/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'BlogApp/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
 
      <!-- Fonts -->
-    
-     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet"> 
+
+     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
      <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet">
-     
+
 
     <!-- Styles -->
-    <link href="{% static 'WebApp/css/gestion.css' %}" rel="stylesheet">
+    <link href="{% static 'BlogApp/css/gestion.css' %}" rel="stylesheet">
 
 </head>
 
 <body>
 
     <h1 class="site-heading text-center text-white d-none d-lg-block">
-      
+
         <span class="site-heading-lower">JUNIOR DEVELOPERS'S BLOG</span>
       </h1>
 
@@ -44,7 +44,7 @@
           <li class="nav-item {% if request.path == '/about/' %}active{% endif %} px-lg-4">
             <a class="nav-link text-uppercase text-expanded" href="{% url 'About' %}">About</a>
           </li>
-         
+
         </ul>
       </div>
     </div>
@@ -54,8 +54,6 @@
     {% block content %}
 
     {% endblock %}
-
-
 
     <!-- Footer -->
     <footer class="footer text-faded text-center py-5">
@@ -84,8 +82,8 @@
 	</footer>
 
     <!-- Bootstrap -->
-    <script src="{% static 'WebApp/vendor/jquery/jquery.min.js' %}"></script>
-    <script src="{% static 'WebApp/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'BlogApp/vendor/jquery/jquery.min.js' %}"></script>
+    <script src="{% static 'BlogApp/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
 
 </body>
 

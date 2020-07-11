@@ -1,14 +1,9 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
-<body>
-    {% block content %}
+{% extends "BlogApp/Base.html" %}
+
+{% load static %}
+
+{% block content %}
+
     <h2>Publishers</h2>
     <ul>
         {% for publisher in object_list %}
@@ -17,6 +12,5 @@
             <h1>{{ publisher.author.first_name }}</h1>
         {% endfor %}
     </ul>
-    {% endblock %}
-</body>
-</html>
+
+{% endblock %}
