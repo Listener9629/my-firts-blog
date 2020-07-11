@@ -5,15 +5,22 @@
 {% block content %}
 
     <h2 align="center">Developer's Blog</h2>
-    <ul>
-        {% for publisher in object_list %}
-            <div>
-                <p>Creado: {{ publisher.created }}, Autor: {{ publisher.author.first_name }}</p>
-                <h4><a href="">{{ publisher.title }}</a></h4>
-                <p>{{ publisher.text|linebreaksbr}}</p>
+    <div class="content container">
+     <div class="row">
+        <div class="col-md">
+            {% for publisher in object_list %}
+                <div class="post">
+
+                    <h4><a href="">{{ publisher.title }}</a></h4>
+                    <p>{{ publisher.text|linebreaksbr}}</p>
+                    <div class="date">
+                        <p><small>Creado: {{ publisher.created }}, Autor: {{ publisher.author.first_name }}</small></p>
+                    </div>
             </div>
 
         {% endfor %}
-    </ul>
+        </div>
+     </div>
+    </div>
 
 {% endblock %}
