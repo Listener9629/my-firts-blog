@@ -1,5 +1,5 @@
 from django.urls import path
-from Web_pageApp import views
+from WebApp import views
 
 urlpatterns = [
     path('', views.home, name="Home"),
