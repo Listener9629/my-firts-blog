@@ -1,10 +1,10 @@
-{% extends "BlogApp/Base.html" %}
+{% extends "WebApp/Base.html" %}
 
 {% load static %}
 
 {% block content %}
 
-    <h2>Publishers</h2>
+    <h2 align="center">Developer's Blog</h2>
     <ul>
         {% for publisher in object_list %}
             <li>{{ publisher.title }}</li>
