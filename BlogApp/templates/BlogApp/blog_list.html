@@ -7,9 +7,12 @@
     <h2 align="center">Developer's Blog</h2>
     <ul>
         {% for publisher in object_list %}
-            <li>{{ publisher.title }}</li>
-            <p>{{ publisher.text }}</p>
-            <h1>{{ publisher.author.first_name }}</h1>
+            <div>
+                <p>Creado: {{ publisher.created }}, Autor: {{ publisher.author.first_name }}</p>
+                <h4><a href="">{{ publisher.title }}</a></h4>
+                <p>{{ publisher.text|linebreaksbr}}</p>
+            </div>
+
         {% endfor %}
     </ul>
 
