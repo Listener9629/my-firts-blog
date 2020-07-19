@@ -1,15 +1,13 @@
 {% load static %}
-
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
 
-    <!-- Enlaces de bootstrap -->
-
     <!-- Referencia al archivo css de la carpeta static -->
-    <link rel="stylesheet" href="{% static 'WebApp/css/blog.css' %}">
+    <link rel="stylesheet" href="{% static '/WebApp/css/blog.css' %}">
 
-    <h1>
+    <h1 style="text-align: center">
         <span>JUNIOR DEVELOPERS'S BLOG</span>
     </h1>
 
@@ -17,20 +15,21 @@
 
 <body>
 
+<!-- Navbar -->
 
- <!-- Navbar -->
- <nav>
-     <a href="{% url 'Home' %}" class="nav-menu">Home</a>
-     <a href="{% url 'Blog' %}" class="nav-menu">Blog</a>
-     <a href="{% url 'About' %}" class="nav-menu">About</a>
-  </nav>
-
+<div class="container">
+    <nav class="nav-main">
+        <ul class="nav-menu">
+          <li><a href="{% url 'Home' %}" class="nav-menu">Home</a></li>
+          <li><a href="{% url 'Blog' %}" class="nav-menu">Blog</a></li>
+          <li><a href="{% url 'About' %}" class="nav-menu">About</a></li>
+        </ul>
+    </nav>
+</div>
     <!--Changing Content -->
     {% block content %}
 
     {% endblock %}
 
 </body>
-
-
 </html>
