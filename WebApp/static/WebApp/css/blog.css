@@ -1,4 +1,4 @@
-a{
+#anav{
   color: #000000;
   text-decoration: none;
   display: block;
@@ -6,11 +6,11 @@ a{
   padding: 10px 10px;
 }
 
-a:visited{
+#anav:visited{
   color: #FF0000;
 }
 
-a:hover{
+#anav:hover{
   color: #A52A2A;
   background-color: #808080;
 }
