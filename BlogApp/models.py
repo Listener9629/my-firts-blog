@@ -9,7 +9,6 @@ class Blog(models.Model):
     title = models.CharField(max_length=200, default="")
     text = models.TextField(default="")
     created = models.DateTimeField(default=timezone.now)
-    published = models.DateTimeField(blank=True, null=True)
 
     class Meta:
         verbose_name = "Blog"

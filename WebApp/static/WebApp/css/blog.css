@@ -26,16 +26,3 @@ ul{
 li{
   float: left;
 }
-
-.container{
-    width: 90%;
-    margin: auto;
-}
-/* navigation*/
-.nav-main{
-    font-size: 17px;
-    display: inline;
-}
-.nav-brand{
-    width: 50px;
-}

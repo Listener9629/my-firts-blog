@@ -7,29 +7,36 @@
     <!-- Referencia al archivo css de la carpeta static -->
     <link rel="stylesheet" href="{% static '/WebApp/css/blog.css' %}">
 
+    <!-- Indica las instrucciones de navegacion y escala -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Titulo visible en la pagina -->
     <h1 style="text-align: center">
         <span>JUNIOR DEVELOPERS'S BLOG</span>
     </h1>
 
+    <!-- Titulo general de la pagina -->
+    <title>JUNIOR DEVELOPERS'S BLOG</title>
+
 </head>
 
-<body>
+<body bgcolor="#F0E68C">
 
 <!-- Navbar -->
-
-<div class="container">
-    <nav class="nav-main">
-        <ul class="nav-menu">
-          <li><a id="anav" href="{% url 'Home' %}" class="nav-menu">Home</a></li>
-          <li><a id="anav" href="{% url 'Blog' %}" class="nav-menu">Blog</a></li>
-          <li><a id="anav" href="{% url 'About' %}" class="nav-menu">About</a></li>
+<div>
+    <nav>
+        <ul>
+          <li><a id="anav" href="{% url 'Home' %}">Home</a></li>
+          <li><a id="anav" href="{% url 'Blog' %}">Blog</a></li>
+          <li><a id="anav" href="{% url 'About' %}">About</a></li>
         </ul>
     </nav>
 </div>
-    <!--Changing Content -->
-    {% block content %}
 
-    {% endblock %}
+<!--Changing Content -->
+{% block content %}
+
+{% endblock %}
 
 </body>
 </html>
