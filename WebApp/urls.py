@@ -1,7 +1,7 @@
 from django.urls import path
 from WebApp import views
 
+#Aqui se llaman los templates en views.py la primera parate es el url despues de la direccion del servidor
 urlpatterns = [
-    path('', views.home, name="Home"),
-    path('about/', views.about, name="About"),
+        path('about/', views.about, name="About"),
 ]
